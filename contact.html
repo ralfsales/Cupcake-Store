@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cupcake Delights</title>
+    <link rel="stylesheet" href="cakestyles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cupcake Delights</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main class="pagecontact" id="pagecontact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required pattern="\d{9,10}" title="Please enter a valid phone number (9 or 10 digits only)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" required placeholder="Describe what you want to buy, quantity, and collection date"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cupcake Delights. All rights reserved.</p>
+    </footer>
+</body>
+</html>

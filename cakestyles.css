@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  hsla(34, 79%, 80%, 0.9);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    margin: 0;
+}
+
+
+header {
+    background-image: url('cupcakestore.jpg');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+h1 {
+    color: white;
+    -webkit-text-stroke: 0.5px burlywood;
+    border: 3px rgb(119, 93, 60) solid;
+    justify-content: flex-start;
+    text-decoration: none;
+    left: 0;
+    background-color: hsl(34, 57%, 70%);
+    border-radius: 5px;
+    padding: 5px;
+    align-content: center;
+    height: min-content;
+}
+
+nav ul {
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+nav ul li {
+    display: inline-block; /* Use inline-block for better control over dimensions */    text-decoration: none;
+    margin: 10px;
+    background-color: burlywood;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px rgb(119, 93, 60) solid;
+    transition: transform 0.3s ease; /* Smooth scaling effect when hovered over*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.pagemenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+}
+
+.card {
+    text-align: center;
+    justify-content: space-between;
+    display: inline-block;
+    background-color: rgb(196, 165, 124);
+    width: 200px;
+    margin: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 3px rgb(119, 93, 60) solid;
+}
+
+nav ul li:hover {
+    transform: scale(1.3); /* Scale up on hover (30% larger) */
+    background-color: rgb(162, 101, 21);
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 2px;
+}
+
+.pagecontact form {
+    display: inline-flex;
+    background-color: burlywood;
+    flex-direction: column;
+    align-items: center;
+    border: 3px rgb(119, 93, 60) solid;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pagecontact button {
+    border: 2px rgb(162, 101, 21) solid;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: transform 0.3s ease; /* Smooth scaling effect when hovered over*/
+}
+
+.pagecontact button:hover {
+    transform: scale(1.3); /* Scale up on hover (30% larger) */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 2px;
+    border: 1px rgb(162, 101, 21) solid;
+    background-color: rgb(162, 101, 21);
+    color: white;
+}
+
+.item {
+    border-radius: 6px;
+    width: 200px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: burlywood;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+main {
+    text-align: center;
+    justify-content: space-between;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+}
+
+main h2 {
+    background-color: burlywood;
+    padding: 20px;
+}
+main img{
+    width: 130px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+main a {
+    text-decoration: none;
+    background-color: burlywood;
+    border: 1px rgb(162, 101, 21) solid;
+    border-radius: 4px;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: burlywood;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* adicionei isso */
+.gallerygrid {   
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; 
+}
+
+.flip {
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    border: 3px rgb(119, 93, 60) solid;
+    border-radius: 5px;
+}
+
+.flip img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+.flip .desc {
+    display: none;
+    background-color: rgb(162, 101, 21);
+    color: white;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 10px;
+    border: 3px rgb(119, 93, 60) solid;
+  }
+
+  .flip:hover .desc {
+    display: block;
+    border-radius: 5px;
+  }
+
+  .flip:hover p li {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .desc p {
+    padding-top: 10px;
+    text-align: justify;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .flip li{
+    text-align: justify;
+    justify-content: center;
+    align-content: center;
+    margin-left: 30px;
+  }
